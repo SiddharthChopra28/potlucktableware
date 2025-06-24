@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potluck</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="stickywrapper">
+        <div id="navbar-spacer"></div>
+        <div id="navbar">
+            <span id="title">POTLUCK</span>
+            <span id="navs">
+                <span class="navselem" onclick="scrollto('page2')">EXPLORE</span>
+                <span class="navselem" onclick="scrollto('page5')">INQUIRE</span>
+                <span class="navselem" onclick="scrollto('page4')">ABOUT US</span>
+            </span>
+            <span class="material-symbols-outlined" id="threelines" onclick="toggleNavbar(curr='menu')">
+                menu
+            </span>
+            <span class="material-symbols-outlined" id="cross" onclick="toggleNavbar(curr='close')">
+                close
+            </span>
+        </div>
+        <div id="mobilenavmenu">
+            <span class="navselem" onclick="scrollto('page2')">Featured Pieces</span>
+            <span class="navselem" onclick="scrollto('page3')">Why Potluck?</span>
+            <span class="navselem" onclick="scrollto('page4')">Our Story</span>
+            <span class="navselem" onclick="scrollto('page5')">Get in touch</span>
+        </div>
+
+        <div id="page1">
+            <div id="maintext">
+                <div id="heading">
+                    Luxury <br> Paper Tableware
+                </div>
+                <div id="subtext">
+                    designs for every occasion, <br> made just for you
+                </div>
+                <div id="buttonsdiv">
+                    <span class="headbutton" onclick="scrollto('page2')">
+                        &nbsp;Explore Potluck
+                    </span>
+                    <span class="headbutton" onclick="scrollto('page5')">
+                        Get in touch
+                    </span>
+                </div>
+            </div>
+            <img id="mainimg" src="./images/main_img.png" alt="a plate">
+
+        </div>
+
+    </div>
+
+    <div id="page2">
+        <div id="page2header">Featured Pieces</div>
+        <div class="showcase">
+            <div class="showcase-item">
+                <img src="./images/plate1.png" class="showcase-img" alt="plate" style="margin-bottom: 15px;">
+                <div class="caption">Paper Plates</div>
+            </div>
+            <div class="showcase-item">
+                <img src="./images/wrappingpaper.png" class="showcase-img" alt="wrapping_paper"
+                    style="margin-bottom: 15px;">
+                <div class="caption">Wrapping Paper</div>
+            </div>
+
+            <div class="showcase-item">
+                <img src="./images/cup1.png" class="showcase-img" alt="cup">
+                <div class="caption">Paper Cups</div>
+
+            </div>
+
+        </div>
+
+        <div class="showcase" style="justify-content: space-around;">
+            <div class="showcase-item">
+                <img src="./images/tissue1.png" class="showcase-img" alt="tissue">
+                <div class="caption">Paper Napkins</div>
+            </div>
+            <div class="showcase-item">
+                <img src="./images/bag1.png" class="showcase-img" alt="bag">
+                <div class="caption">Paper Bags</div>
+
+            </div>
+
+        </div>
+
+        <div class="more">
+            Need something else? Or want custom designs?
+        </div>
+        <span class="link" onclick="scrollto('page5')">
+            Contact us
+        </span>
+
+
+        <!-- todo now: add want something else image with the product images. add a customize section. add a contact us section -->
+
+
+
+    </div>
+
+    <div id="page3">
+
+        <div id="whyusimg">
+            <img src="./images/whyusimg.png" id="whyusimgimg" alt="table">
+        </div>
+        <div id="whyustxt">
+            <div id="whyusheader">Why Potluck?</div>
+            <div class="row">
+                <div class="point">
+                    <img src="./images/quality.png" class="pointimg" alt="quality">
+                    <div class="pointtext">
+                        <div class="pointtextheader">Highest Quality</div>
+                        <div class="pointtextbody">We make sure that all the pigs are best quality</div>
+
+                    </div>
+                </div>
+                <div class="point">
+                    <img src="./images/quality.png" class="pointimg" alt="quality">
+                    <div class="pointtext">
+                        <div class="pointtextheader">Highest Quality</div>
+                        <div class="pointtextbody">We make sure that all the pigs are best quality</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="point">
+                    <img src="./images/quality.png" class="pointimg" alt="quality">
+                    <div class="pointtext">
+                        <div class="pointtextheader">Highest Quality</div>
+                        <div class="pointtextbody">We make sure that all the pigs are best quality</div>
+
+                    </div>
+                </div>
+                <div class="point">
+                    <img src="./images/quality.png" class="pointimg" alt="quality">
+                    <div class="pointtext">
+                        <div class="pointtextheader">Highest Quality</div>
+                        <div class="pointtextbody">We make sure that all the pigs are best quality</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="page4">
+        <div id="abouttextbox">
+            <div id="abouttextheader">
+                Our Story
+            </div>
+            <div id="abouttextbody">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus sint architecto repudiandae
+                similique quis itaque molestias dolor eos numquam impedit sed voluptas nisi quas, nemo quaerat labore
+                non necessitatibus perferendis esse voluptatibus aperiam deleniti. Ipsa eaque ullam molestias tempore.
+                Culpa recusandae molestias sint ut commodi. Itaque, culpa corporis? Ut?
+            </div>
+        </div>
+        <div id="aboutusimgbox">
+            <img src="./images/machine.jpeg" alt="machine image" id="aboutusimg">
+        </div>
+    </div>
+
+
+    <div id="page5">
+        <div id="page5header">Contact Us</div>
+        <div id="form">
+            <input type="text" id="nameinput" placeholder="Name" class="input" required>
+            <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
+            <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
+            <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
+            <button id="submit" onclick="submit()">Submit</button>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
