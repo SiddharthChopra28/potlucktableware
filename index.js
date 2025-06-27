@@ -28,7 +28,7 @@ async function submit() {
         query
     }
 
-    await fetch("https://formsubmit.co/contact.sid.chopra@gmail.com",
+    await fetch("https://formsubmit.co/d492f735d27c8b2a8615557a99acca42",
         {
             method: "POST",
             headers: {
