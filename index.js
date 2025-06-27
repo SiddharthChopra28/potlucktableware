@@ -28,7 +28,7 @@ async function submit() {
         query
     }
 
-    await fetch("https://formsubmit.co/d492f735d27c8b2a8615557a99acca42",
+    await fetch("https://formsubmit.co/info@potlucktableware.com",
         {
             method: "POST",
             headers: {
