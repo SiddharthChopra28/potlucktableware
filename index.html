@@ -22,8 +22,10 @@
                 <span class="navselem" onclick="scrollto('page2')">EXPLORE</span>
                 <span class="navselem" onclick="scrollto('page5')">INQUIRE</span>
                 <span class="navselem" onclick="scrollto('page4')">ABOUT US</span>
-                <span id="socialsnavspan"><img src="./images/instagram_black.webp" alt="Instagram" class="socialsnav" onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();">
-                    <img src="./images/linkedin_black.webp" alt="Linkedin" class="socialsnav" onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">
+                <span id="socialsnavspan"><img src="./images/instagram_black.webp" alt="Instagram" class="socialsnav"
+                        onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();">
+                    <img src="./images/linkedin_black.webp" alt="Linkedin" class="socialsnav"
+                        onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">
                 </span>
 
             </span>
@@ -39,8 +41,10 @@
             <span class="navselem" onclick="scrollto('page3')">Why Potluck?</span>
             <span class="navselem" onclick="scrollto('page4')">Our Story</span>
             <span class="navselem" onclick="scrollto('page5')">Get in touch</span>
-            <span class="navselem" onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();">Instagram</span>
-            <span class="navselem" onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">Linkedin</span>
+            <span class="navselem"
+                onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();">Instagram</span>
+            <span class="navselem"
+                onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">Linkedin</span>
         </div>
 
         <div id="page1">
@@ -67,34 +71,60 @@
     </div>
 
     <div id="page2">
-        <div id="page2header">Featured Pieces</div>
-        <div class="showcase">
-            <div class="showcase-item">
-                <img src="./images/plate1.webp" class="showcase-img" alt="plate" style="margin-bottom: 15px;">
-                <div class="caption">Paper Plates</div>
-            </div>
-            <div class="showcase-item">
-                <img src="./images/wrappingpaper.webp" class="showcase-img" alt="wrapping_paper"
-                    style="margin-bottom: 15px;">
-                <div class="caption">Wrapping Paper</div>
+        <div id="page2header">Our product range</div>
+        <div id="dabba">
+
+            <div class="showcase">
+
+                <div class="showcase-item">
+                    <div class="imgflex">
+                        <img src="./images/plate1.webp" class="showcase-img" alt="plate" style="margin-bottom: 15px;">
+
+                    </div>
+                    <div class="caption">Paper Plates</div>
+                </div>
+                <div class="showcase-item">
+                    <div class="imgflex">
+                        <img src="./images/wrappingpaper.webp" class="showcase-img" alt="wrapping_paper"
+                            style="margin-bottom: 15px;">
+                    </div>
+                    <div class="caption">Wrapping Paper</div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="imgflex">
+
+                        <img src="./images/cup1.webp" class="showcase-img" alt="cup">
+
+                    </div>
+                    <div class="caption">Paper Cups</div>
+
+
+                </div>
+
             </div>
 
-            <div class="showcase-item">
-                <img src="./images/cup1.webp" class="showcase-img" alt="cup">
-                <div class="caption">Paper Cups</div>
+            <div class="showcase" style="justify-content: space-around;">
+                <div class="showcase-item">
+                    <div class="imgflex">
 
-            </div>
+                        <img src="./images/tissue1.webp" class="showcase-img" alt="tissue">
+                    </div>
 
-        </div>
+                    <div class="caption">Paper Napkins</div>
 
-        <div class="showcase" style="justify-content: space-around;">
-            <div class="showcase-item">
-                <img src="./images/tissue1.webp" class="showcase-img" alt="tissue">
-                <div class="caption">Paper Napkins</div>
-            </div>
-            <div class="showcase-item">
-                <img src="./images/bag1.webp" class="showcase-img" alt="bag">
-                <div class="caption">Paper Bags</div>
+                </div>
+                <div class="showcase-item">
+                    <div class="imgflex">
+
+                        <img src="./images/bag1.webp" class="showcase-img" alt="bag">
+                    </div>
+
+                        <div class="caption">Paper Bags</div>
+
+
+                </div>
+                
 
             </div>
 
@@ -121,11 +151,12 @@
             <div id="whyusheader">Why Potluck?</div>
             <div class="row">
                 <div class="point">
+
                     <img src="./images/quality.webp" class="pointimg" alt="quality">
                     <div class="pointtext">
                         <div class="pointtextheader">Highest Quality</div>
 
-                        <div class="pointtextbody">All products made using highest quality, food grade paper.
+                        <div class="pointtextbody">All products made using highest quality paper.
                             Manufactured using state of the art machinery and an eye for perfection.</div>
 
                     </div>
@@ -205,18 +236,22 @@
             <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
             <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
             <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
+            <span id = "success" class="hidden">Submitted Successfully!</span>
+            <span id = "failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
+            <span id = "incomplete" class="hidden">Please fill in all the fields!</span>
             <button id="submit" onclick="submit()">Submit</button>
-
         </div>
 
 
     </div>
 
     <footer id="footer">
-        <span>&copy; 2025 Potluck Tableware | </span> 
+        <span>&copy; 2025 Potluck Tableware | </span>
         <span>
-            <img src="./images/instagram.webp" alt="Instagram" class="socials" onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();"> 
-            <img src="./images/linkedin.webp" alt="Linkedin" class="socials" onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">
+            <img src="./images/instagram.webp" alt="Instagram" class="socials"
+                onclick="window.open('https://www.instagram.com/potluck_tableware', '_blank').focus();">
+            <img src="./images/linkedin.webp" alt="Linkedin" class="socials"
+                onclick="window.open('https://www.linkedin.com/company/potlucktableware/', '_blank').focus();">
         </span>
     </footer>
 </body>

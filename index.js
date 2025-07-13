@@ -21,13 +21,22 @@ async function submit() {
     let number = document.getElementById("numberinput").value;
     let query = document.getElementById("querybox").value;
 
+    document.getElementById("submit").onclick = '';
+    
     let json = {
         name,
         email,
         number,
         query
     }
-
+    if (name.trim() === "" || email.trim() === "" || number.trim() === "" || query.trim() === ""){
+        document.getElementById('success').classList.add('hidden');
+        document.getElementById('failure').classList.add('hidden');
+        document.getElementById('incomplete').classList.remove('hidden');
+        document.getElementById("submit").onclick = submit;
+        return;
+    }
+    
     await fetch("https://formsubmit.co/d492f735d27c8b2a8615557a99acca42",
         {
             method: "POST",
@@ -36,7 +45,26 @@ async function submit() {
             },
             body: JSON.stringify(json)
         }
-    )
+    ).then((response)=>{
+        if (response.ok){
+            document.getElementById('success').classList.remove('hidden');
+            document.getElementById('failure').classList.add('hidden');
+            document.getElementById('incomplete').classList.add('hidden');
+        }
+        else{
+            document.getElementById('failure').classList.remove('hidden');
+            document.getElementById('success').classList.add('hidden');
+            document.getElementById('incomplete').classList.add('hidden');
+
+        }
+        document.getElementById("submit").onclick = submit;
+    })
+
+    
+
+
+
+
 }
 
 
