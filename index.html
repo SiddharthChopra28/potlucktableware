@@ -240,30 +240,36 @@
             <span>+91 9350290119 &nbsp; | &nbsp; info@potlucktableware.com</span>
 
         </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-        <!-- <div id="form">
+            <input type="hidden" name="access_key" value="55bdd7f3-3b83-418f-830b-cf0e5776ba05">
+
             <input type="text" id="nameinput" placeholder="Name" class="input" required>
             <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
             <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
             <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
-            <span id="success" class="hidden">Submitted Successfully!</span>
-            <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
-            <span id="incomplete" class="hidden">Please fill in all the fields!</span>
+            <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+            <!-- <button id="submit" onclick="submit()">Submit</button> -->
             <button id="submit" onclick="submit()">Submit</button>
-        </div> -->
 
-    <form action="https://formsubmit.co/info@potlucktableware.com" method="POST" id="form">
-        <input type="text" id="nameinput" placeholder="Name" class="input" required>
-        <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
-        <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
-        <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
+        </form>
+        <span id="success" class="hidden">Submitted Successfully!</span>
+        <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
+        <span id="incomplete" class="hidden">Please fill in all the fields!</span>
 
-        <button type="submit" onclick="submit()" id="submit">Submit</button>
-    </form>
 
-    <span id="success" class="hidden">Submitted Successfully!</span>
-    <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
-    <span id="incomplete" class="hidden">Please fill in all the fields!</span>
+        <form action="https://formsubmit.co/info@potlucktableware.com" method="POST" id="form">
+            <input type="text" id="nameinput" placeholder="Name" class="input" required>
+            <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
+            <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
+            <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
+
+            <button type="submit" onclick="submit()" id="submit">Submit</button>
+        </form>
+
+        <span id="success" class="hidden">Submitted Successfully!</span>
+        <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
+        <span id="incomplete" class="hidden">Please fill in all the fields!</span>
 
 
     </div>
