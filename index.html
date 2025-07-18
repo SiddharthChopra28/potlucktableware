@@ -240,9 +240,10 @@
             <span>+91 9350290119 &nbsp; | &nbsp; info@potlucktableware.com</span>
 
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST" id="form">
 
-            <input type="hidden" name="access_key" value="55bdd7f3-3b83-418f-830b-cf0e5776ba05">
+        <form action="https://api.web3forms.com/submit" method="POST" >
+
+            <input type="hidden" name="access_key" value="">
 
             <input type="text" id="nameinput" placeholder="Name" class="input" required>
             <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
@@ -253,10 +254,45 @@
             <button id="submit" onclick="submit()">Submit</button>
 
         </form>
-        <span id="success" class="hidden">Submitted Successfully!</span>
-        <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
-        <span id="incomplete" class="hidden">Please fill in all the fields!</span>
 
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+            <!-- Create your Access key here: https://web3forms.com/ -->
+            <!-- <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE"> -->
+            <input type="hidden" name="access_key" value="55bdd7f3-3b83-418f-830b-cf0e5776ba05">
+
+            <!-- Optional: Can be type="hidden" or type="text" for subject -->
+            <input type="hidden" name="subject" value="New Contact Request">
+        
+            <!-- Optional: From Name you want to see in the email
+                Default is "Notifications". you can overwrite here -->
+            <input type="hidden" name="from_name" value="Potluck Tableware.com">
+        
+            <!-- Optional: To send the form submission as CC email -->
+            <input type="hidden" name="ccemail" value="info@potlucktableware.com">
+
+
+            <!-- Required: if submitting without Javascript 
+                (because by default web3form outputs json) -->
+
+            <!-- If javascript, use "window.location.hash" for redirects -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <!-- Optional: But Recommended: To Prevent SPAM Submission. 
+                Make sure its hidden by default -->
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+            <!-- Custom Form Data: 
+            Then you can include your own form data you wish to receive in email. -->
+            <input type="email" name="email" required>
+            <input type="text" name="First Name" required>
+            <input type="text" name="Phone Number" required>
+            <textarea name="message" cols="30" rows="10" required></textarea>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
 
         <!-- <form action="https://formsubmit.co/info@potlucktableware.com" method="POST" id="form">
             <input type="text" id="nameinput" placeholder="Name" class="input" required>
