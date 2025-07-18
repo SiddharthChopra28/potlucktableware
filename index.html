@@ -241,7 +241,7 @@
 
         </div>
 
-        <form action="https://api.web3forms.com/submit" method="POST" >
+        <!-- <form action="https://api.web3forms.com/submit" method="POST" >
 
             <input type="hidden" name="access_key" value="">
 
@@ -249,11 +249,10 @@
             <input type="email" id="emailinput" placeholder="Email ID" class="input" required>
             <input type="number" id="numberinput" placeholder="Mobile Number" class="input" required>
             <textarea name="query" id="querybox" class="input" placeholder="Enter your query"></textarea>
-            <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
-            <!-- <button id="submit" onclick="submit()">Submit</button> -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
             <button id="submit" onclick="submit()">Submit</button>
 
-        </form>
+        </form> -->
 
         <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
@@ -285,10 +284,10 @@
 
             <!-- Custom Form Data: 
             Then you can include your own form data you wish to receive in email. -->
-            <input type="email" name="email" required>
-            <input type="text" name="First Name" required>
-            <input type="text" name="Phone Number" required>
-            <textarea name="message" cols="30" rows="10" required></textarea>
+            <input type="email" class="input" name="email" required>
+            <input type="text" class="input" name="First Name" required>
+            <input type="text" class="input" name="Phone Number" required>
+            <textarea name="message" class="input" cols="30" rows="10" required></textarea>
 
             <button type="submit">Submit Form</button>
 
