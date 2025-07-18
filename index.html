@@ -284,10 +284,11 @@
 
             <!-- Custom Form Data: 
             Then you can include your own form data you wish to receive in email. -->
-            <input type="email" class="input" name="email" required>
-            <input type="text" class="input" name="First Name" required>
-            <input type="text" class="input" name="Phone Number" required>
-            <textarea name="message" class="input" cols="30" rows="10" required></textarea>
+            <input type="text" id="nameinput" placeholder="Name" name="First Name" class="input" required>
+            <input type="email" id="emailinput" placeholder="Email ID" name="email" class="input" required>
+            <input type="number" id="numberinput" placeholder="Mobile Number" name="Phone Number" class="input" required>
+            <textarea name="query" id="querybox" name="message" class="input" placeholder="Enter your query"></textarea>
+
 
             <button type="submit">Submit Form</button>
 
@@ -302,9 +303,9 @@
             <button type="submit" onclick="submit()" id="submit">Submit</button>
         </form> -->
 
-        <span id="success" class="hidden">Submitted Successfully!</span>
+        <!-- <span id="success" class="hidden">Submitted Successfully!</span>
         <span id="failure" class="hidden">Sorry, failed to submit, try contacting us on the email or mobile!</span>
-        <span id="incomplete" class="hidden">Please fill in all the fields!</span>
+        <span id="incomplete" class="hidden">Please fill in all the fields!</span> -->
 
 
     </div>
