@@ -256,34 +256,16 @@
 
         <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
-            <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
-            <!-- Create your Access key here: https://web3forms.com/ -->
-            <!-- <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE"> -->
-            <input type="hidden" name="access_key" value="55bdd7f3-3b83-418f-830b-cf0e5776ba05">
+            <input type="hidden" name="access_key" value="da9fbc70-4cab-440e-8d68-de8593333370">
 
-            <!-- Optional: Can be type="hidden" or type="text" for subject -->
             <input type="hidden" name="subject" value="New Contact Request">
-        
-            <!-- Optional: From Name you want to see in the email
-                Default is "Notifications". you can overwrite here -->
+
             <input type="hidden" name="from_name" value="Potluck Tableware.com">
         
-            <!-- Optional: To send the form submission as CC email -->
-            <input type="hidden" name="ccemail" value="info@potlucktableware.com">
-
-
-            <!-- Required: if submitting without Javascript 
-                (because by default web3form outputs json) -->
-
-            <!-- If javascript, use "window.location.hash" for redirects -->
             <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-            <!-- Optional: But Recommended: To Prevent SPAM Submission. 
-                Make sure its hidden by default -->
             <input type="checkbox" name="botcheck" id="" style="display: none;">
 
-            <!-- Custom Form Data: 
-            Then you can include your own form data you wish to receive in email. -->
             <input type="text" id="nameinput" placeholder="Name" name="First Name" class="input" required>
             <input type="email" id="emailinput" placeholder="Email ID" name="email" class="input" required>
             <input type="number" id="numberinput" placeholder="Mobile Number" name="Phone Number" class="input" required>
